@@ -11,7 +11,7 @@ The main goal of this implementation is to seamlessly blend a pieace of an image
 
 ### First improvement
 So a first nice improvement is to solve Poisson equations on the boundary conditions without considering the gradients inside the destination area.
-The classic example for this algorithm is to copy and paste the eye in the middle of the hand (very creepy LOL).
+The classic example for this algorithm is to copy and paste the eye in the middle of the hand (this is actually me :) very creepy LOL).
 
 ![Alt text](./first_attempt.png?raw=true)
 
@@ -29,7 +29,7 @@ The second improvement is to consider the gradients inside the destination area 
 ### Result
 ![Alt text](./results/Screen%20Shot%202018-01-07%20at%2018.53.40.png?raw=true)
 
-
+Other results are available in the results folder!
 
 # How to execute the code and Usage
 
@@ -38,3 +38,5 @@ I tried to keep the implementations of the different versions of the algorithm s
 To execute the code just run either:
 poissonImageEditing.m
 poissonImageEditing_MixingGradients.m
+
+The first thing to do when executing the code is to select the region in the source image that we want to copy and then using the directional keys select the area in the target image where we want to paste.
