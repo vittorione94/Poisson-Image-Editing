@@ -7,7 +7,7 @@ This technique is explained in a very formal way in the paper:Poisson Image Edit
 A really nice and understandable tutorial on the maths behind this is : https://www.youtube.com/watch?v=UcTJDamstdk
 
 ## Description
-The main goal of this implementation is to seamlessly blend a piece of an image to another image. Of course the first we can notice is that we cannot do worse than just cropping and pasting the two images.
+The main goal of this implementation is to seamlessly blend a piece of an image to another image. Of course the first thing we notice is that we cannot do worse than just cropping and pasting the two images.
 
 ### First improvement
 So a first nice improvement is to solve Poisson equations on the boundary conditions without considering the gradients inside the destination area.
@@ -36,7 +36,7 @@ Other results are available in the results folder!
 I tried to keep the implementations of the different versions of the algorithm separate so that the improvements are more understandable.
 
 To execute the code just run either:
-poissonImageEditing.m
-poissonImageEditing_MixingGradients.m
+1.poissonImageEditing.m
+2.poissonImageEditing_MixingGradients.m
 
-The first thing to do when executing the code is to select the region in the source image that we want to copy and then using the directional keys select the area in the target image where we want to paste.
+The first thing to do when executing the code is to select the region in the source image that we want to copy, and then, using the directional keys, select the area in the target image where we want to paste.
